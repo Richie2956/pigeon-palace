@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pigeon Palace: pigeon care course, free symptom checker and first aid for a found pigeon</title>
+<meta name="description" content="A pigeon care course with free starter modules and a free symptom checker for UK keepers and rescuers, with first aid steps for anyone who has just found a pigeon. Decision support, not a substitute for a vet.">
+<meta property="og:title" content="Pigeon Palace: pigeon care course, free symptom checker and first aid for a found pigeon">
+<meta property="og:description" content="A pigeon care course with free starter modules and a free symptom checker for UK keepers and rescuers, with first aid steps for anyone who has just found a pigeon. Decision support, not a substitute for a vet.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pigeon Palace">
+<meta property="og:image" content="icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#3a1d4d">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..800;1,400..800&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  
+  --bg: #fbf6ef;
+  --surface: #ffffff;
+  --surface-2: #f4ecf9;
+  --surface-3: #e8daf3;
+  --ink: #2a1a33;
+  --ink-2: #554563;
+  --ink-3: #6d5e79;
+  --line: #e9dfee;
+  --line-strong: #8f7f9b;
+  
+  --bar-bg: #3a1d4d;
+  --bar-ink: #fdf8ff;
+  --bar-ink-2: #dccbe8;
+  --bar-line: #563271;
+  
+  --accent: #7b3fa8;
+  --accent-strong: #5f2c87;
+  --accent-ink: #ffffff;
+  --accent-soft: #edd9fb;
+  --accent-on-bar: #ffb3da;
+  
+  --violet: #ad1f6c;
+  --violet-soft: #fde4f1;
+  
+  --pop: #ff9fd0;
+  --pop-strong: #f57fbb;
+  --pop-soft: #ffe8f3;
+  --pop-ink: #3a1d4d;
+  --sun: #ffcf5c;
+  --sun-soft: #fff4d3;
+  
+  --emergency: #a8201a;
+  --emergency-soft: #fbe3e1;
+  --emergency-line: #e0928d;
+  --today: #7c4f00;
+  --today-soft: #fbecc8;
+  --today-line: #d9a84a;
+  --soon: #4a4a7a;
+  --soon-soft: #e6e6f5;
+  --soon-line: #a9a9d1;
+  --manage: #2c6a34;
+  --manage-soft: #dcedda;
+  --manage-line: #93c08f;
+  
+  --mark: #ffe69a;
+  --mark-ink: #2a1a33;
+  --focus: #1d4ed8;
+  --shadow: rgba(58, 29, 77, 0.16);
+  --shadow-soft: rgba(58, 29, 77, 0.08);
+  --scrim: rgba(30, 14, 40, 0.55);
+
+  --font-body: 'Figtree', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-head: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --font-label: var(--font-body);
+  --font-ui: var(--font-body);
+
+  
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-md: 1.1875rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 1.9375rem;
+
+  --bar-h: 56px;
+  --tabs-h: 62px;
+  --dock-h: 64px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --measure: 42rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1220;
+    --surface: #241a2c;
+    --surface-2: #2f2339;
+    --surface-3: #3c2d48;
+    --ink: #f3ebf7;
+    --ink-2: #cdbfd8;
+    --ink-3: #a797b3;
+    --line: #3c2d48;
+    --line-strong: #7d6b8b;
+    --bar-bg: #211629;
+    --bar-ink: #f8f1fb;
+    --bar-ink-2: #bfaecb;
+    --bar-line: #3c2d48;
+    --accent: #d3a4f3;
+    --accent-strong: #e4c4fa;
+    --accent-ink: #2a1238;
+    --accent-soft: #3d2452;
+    --accent-on-bar: #ffb3da;
+    --violet: #ff9fd0;
+    --violet-soft: #47203a;
+    --pop: #ff9fd0;
+    --pop-strong: #ffb7dc;
+    --pop-soft: #472340;
+    --pop-ink: #2a1238;
+    --sun: #ffcf5c;
+    --sun-soft: #453512;
+    --emergency: #ff9288;
+    --emergency-soft: #431d1a;
+    --emergency-line: #8e3a34;
+    --today: #f3c467;
+    --today-soft: #3d2e0e;
+    --today-line: #80621f;
+    --soon: #b9b9ea;
+    --soon-soft: #2a2a47;
+    --soon-line: #55558a;
+    --manage: #93d39b;
+    --manage-soft: #1a3320;
+    --manage-line: #3c6c44;
+    --mark: #6d5a12;
+    --mark-ink: #fff6d6;
+    --focus: #9cc2ff;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --shadow-soft: rgba(0, 0, 0, 0.3);
+    --scrim: rgba(8, 4, 12, 0.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1220;
+  --surface: #241a2c;
+  --surface-2: #2f2339;
+  --surface-3: #3c2d48;
+  --ink: #f3ebf7;
+  --ink-2: #cdbfd8;
+  --ink-3: #a797b3;
+  --line: #3c2d48;
+  --line-strong: #7d6b8b;
+  --bar-bg: #211629;
+  --bar-ink: #f8f1fb;
+  --bar-ink-2: #bfaecb;
+  --bar-line: #3c2d48;
+  --accent: #d3a4f3;
+  --accent-strong: #e4c4fa;
+  --accent-ink: #2a1238;
+  --accent-soft: #3d2452;
+  --accent-on-bar: #ffb3da;
+  --violet: #ff9fd0;
+  --violet-soft: #47203a;
+  --pop: #ff9fd0;
+  --pop-strong: #ffb7dc;
+  --pop-soft: #472340;
+  --pop-ink: #2a1238;
+  --sun: #ffcf5c;
+  --sun-soft: #453512;
+  --emergency: #ff9288;
+  --emergency-soft: #431d1a;
+  --emergency-line: #8e3a34;
+  --today: #f3c467;
+  --today-soft: #3d2e0e;
+  --today-line: #80621f;
+  --soon: #b9b9ea;
+  --soon-soft: #2a2a47;
+  --soon-line: #55558a;
+  --manage: #93d39b;
+  --manage-soft: #1a3320;
+  --manage-line: #3c6c44;
+  --mark: #6d5a12;
+  --mark-ink: #fff6d6;
+  --focus: #9cc2ff;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --scrim: rgba(8, 4, 12, 0.7);
+  color-scheme: dark;
+}
+/* Pigeon Palace website. Warm, soft and plum: cream page, rounded cards, pill buttons and the
+   palace arch. Component styles only. The colour and font tokens are taken from src/app.css at
+   build time, so the site and the app always share one palette. */
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+h1, h2, h3 { font-family: var(--font-head); font-optical-sizing: auto; line-height: 1.1; letter-spacing: -0.025em; margin: 0; font-weight: 700; }
+p, ul, ol, dl, figure { margin: 0; }
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 0.07em; }
+a:hover { text-decoration-thickness: 0.14em; }
+:focus { outline: none; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+svg.i { width: 1.25em; height: 1.25em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.wrap {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+.skip { position: absolute; left: 12px; top: -100px; z-index: 10; background: var(--surface); color: var(--ink); padding: 12px 16px; border-radius: 999px; border: 2px solid var(--focus); font-weight: 700; }
+.skip:focus { top: 12px; }
+
+/* ---------- header ---------- */
+.top { position: relative; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.top-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 24px; padding-top: 8px; padding-bottom: 8px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; min-height: 52px; color: var(--ink); text-decoration: none; font-family: var(--font-head); font-weight: 700; font-size: 1.4375rem; letter-spacing: -0.02em; }
+.brand svg { width: 44px; height: 44px; flex: none; padding: 6px; border-radius: 50%; background: var(--bar-bg); overflow: visible; }
+.mark-body { fill: var(--bar-ink); }
+.mark-neck { fill: var(--accent-on-bar); }
+.mark-bar { fill: var(--bar-bg); }
+.mark-crown { fill: var(--sun); }
+.nav ul { list-style: none; margin: 0 -8px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0 2px; }
+.nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: var(--ink); font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 999px; }
+.nav a:hover { background: var(--surface-2); }
+.nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.nav .nav-donate a { background: var(--pop); color: var(--pop-ink); padding: 0 18px; margin-left: 6px; }
+.nav .nav-donate a:hover { background: var(--pop-strong); }
+
+/* ---------- buttons ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 12px 28px; border-radius: 999px; border: 2px solid var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 800; font-size: 1.125rem; line-height: 1.2; text-decoration: none; text-align: center; box-shadow: 0 12px 24px -14px var(--accent); transition: transform 0.15s ease, background-color 0.15s ease; }
+.btn:hover { background: var(--accent-strong); border-color: var(--accent-strong); transform: translateY(-1px); }
+.btn svg { width: 1.2em; height: 1.2em; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.btn-light { background: var(--pop); border-color: var(--pop); color: var(--pop-ink); box-shadow: none; }
+.btn-light:hover { background: var(--pop-strong); border-color: var(--pop-strong); }
+.btn-plain { background: transparent; color: var(--accent); box-shadow: none; }
+.btn-plain:hover { background: var(--accent-soft); border-color: var(--accent); }
+.btn-pop { background: var(--pop); border-color: var(--pop); color: var(--pop-ink); box-shadow: 0 12px 24px -14px var(--pop-strong); }
+.btn-pop:hover { background: var(--pop-strong); border-color: var(--pop-strong); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.5; background: var(--accent-soft); color: var(--accent-strong); }
+.pill svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.pill-free { background: var(--manage-soft); color: var(--manage); }
+.pill-pop { background: var(--pop-soft); color: var(--violet); }
+.pill-sun { background: var(--sun-soft); color: var(--today); }
+
+/* ---------- hero ---------- */
+.opening { display: grid; gap: 36px; align-items: center; padding-top: 44px; padding-bottom: 24px; }
+.opening h1 { font-size: clamp(3rem, 12vw, 5.5rem); font-weight: 800; letter-spacing: -0.04em; line-height: 0.98; }
+.opening h1 em { font-style: italic; font-weight: 600; color: var(--accent); }
+.tagline { display: inline-block; margin-bottom: 18px; padding: 6px 16px; border-radius: 999px; background: var(--pop); color: var(--pop-ink); font-family: var(--font-head); font-style: italic; font-weight: 600; font-size: clamp(1.0625rem, 2.6vw, 1.25rem); line-height: 1.3; transform: rotate(-1.5deg); }
+.lede { margin-top: 18px; font-size: clamp(1.1875rem, 2.6vw, 1.4375rem); line-height: 1.45; color: var(--ink-2); max-width: 34rem; }
+.trust { list-style: none; padding: 0; margin: 26px 0 0; display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--ink-2); font-weight: 600; font-size: 1rem; }
+.trust li { display: inline-flex; align-items: center; gap: 8px; }
+.trust svg { width: 1.3em; height: 1.3em; padding: 3px; border-radius: 50%; background: var(--manage-soft); color: var(--manage); fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* the palace arch */
+.arch-stage { position: relative; width: min(100%, 23rem); margin: 0 auto; padding: 14px 14px 0; }
+.arch { position: relative; aspect-ratio: 4 / 5; border-radius: 999px 999px 28px 28px; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--accent) 80%, var(--pop)), var(--bar-bg) 78%); box-shadow: 0 30px 50px -30px var(--shadow), inset 0 0 0 10px color-mix(in srgb, var(--sun) 90%, transparent), inset 0 0 0 12px var(--bar-bg); display: grid; place-items: center; }
+.arch img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.arch .bird { width: 74%; height: auto; margin-top: 16%; overflow: visible; filter: drop-shadow(0 14px 18px rgba(20, 8, 28, 0.35)); }
+.arch .bird .mark-bar { fill: var(--bar-bg); }
+.arch .dots { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.5; }
+.arch-stage .chip { position: absolute; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--surface); color: var(--ink); font-weight: 800; font-size: 0.9375rem; line-height: 1.2; box-shadow: 0 14px 26px -14px var(--shadow); }
+.arch-stage .chip b { font-family: var(--font-head); font-size: 1.25rem; color: var(--accent); }
+.arch-stage .chip-a { left: -6px; bottom: 22%; transform: rotate(-4deg); }
+.arch-stage .chip-b { right: -6px; bottom: 7%; transform: rotate(3deg); background: var(--pop); color: var(--pop-ink); }
+.arch-stage .chip-b b { color: var(--pop-ink); }
+
+.page-head { padding-top: 40px; padding-bottom: 20px; }
+.page-head h1 { font-size: clamp(2.625rem, 9vw, 4.25rem); font-weight: 800; letter-spacing: -0.035em; }
+
+/* ---------- found a pigeon: first aid comes first ---------- */
+.urgent-wrap { padding-top: 20px; padding-bottom: 8px; }
+.urgent { position: relative; background: linear-gradient(150deg, var(--bar-bg), color-mix(in srgb, var(--bar-bg) 70%, var(--accent))); color: var(--bar-ink); border-radius: 32px; padding: 30px 22px 26px; box-shadow: 0 30px 50px -34px var(--shadow); overflow: hidden; }
+.urgent h2 { font-size: clamp(1.875rem, 5.4vw, 2.75rem); }
+.urgent .sub { margin-top: 10px; color: var(--bar-ink-2); max-width: 36rem; }
+.urgent a { color: var(--accent-on-bar); }
+.urgent a.btn { color: var(--pop-ink); }
+.order { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 12px; counter-reset: order; }
+.order li { counter-increment: order; display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 2px 14px; align-items: start; padding: 16px; border-radius: 20px; background: color-mix(in srgb, var(--bar-ink) 9%, transparent); }
+.order li::before { content: counter(order); grid-row: span 2; width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center; background: var(--accent-on-bar); color: var(--bar-bg); font-family: var(--font-head); font-weight: 800; font-size: 1.5rem; line-height: 1; }
+.order strong { font-family: var(--font-head); font-weight: 700; font-size: 1.375rem; line-height: 1.2; min-width: 0; }
+.order span { color: var(--bar-ink-2); line-height: 1.45; min-width: 0; }
+.urgent .also { margin-top: 18px; padding: 14px 16px; border-radius: 16px; background: color-mix(in srgb, var(--sun) 16%, transparent); border: 1px solid color-mix(in srgb, var(--sun) 50%, transparent); color: var(--bar-ink); font-weight: 600; }
+.top :focus-visible, .foot :focus-visible, .urgent :focus-visible, .support :focus-visible { outline-color: var(--sun); }
+
+/* ---------- sections ---------- */
+.band { padding-top: 44px; padding-bottom: 12px; }
+.band-in { padding: 0; }
+.band h2 { font-size: clamp(2rem, 5.4vw, 3rem); scroll-margin-top: 90px; }
+.band-head { max-width: 44rem; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.eyebrow::before { content: ''; width: 22px; height: 4px; border-radius: 4px; background: var(--pop); }
+.band-body { margin-top: 16px; max-width: 44rem; }
+.band-body.wide { max-width: none; }
+.band-body > * + * { margin-top: 1.05em; }
+.band-body h3 { font-size: 1.375rem; margin-top: 1.7em; letter-spacing: -0.015em; }
+.band-body ul, .band-body ol { padding-left: 1.3em; }
+.band-body li + li { margin-top: 0.45em; }
+.band-body li::marker { color: var(--accent); font-weight: 700; }
+.note { color: var(--ink-2); font-size: 1rem; background: var(--surface-2); border-radius: 16px; padding: 14px 18px; }
+.sub-lede { font-size: 1.1875rem; color: var(--ink-2); max-width: 40rem; margin-top: 12px; }
+
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.stats div { display: flex; flex-direction: column-reverse; justify-content: flex-end; padding: 18px 18px 16px; border-radius: 22px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 14px 26px -22px var(--shadow); }
+.stats div:nth-child(2) { background: var(--pop-soft); border-color: transparent; }
+.stats div:nth-child(3) { background: var(--accent-soft); border-color: transparent; }
+.stats div:nth-child(4) { background: var(--sun-soft); border-color: transparent; }
+.stats dd { margin: 0; font-family: var(--font-head); font-weight: 800; font-size: clamp(2.25rem, 7vw, 3.25rem); line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
+.stats dt { color: var(--ink-2); font-size: 1rem; font-weight: 600; line-height: 1.3; margin-top: 8px; }
+
+/* course tiers */
+.tiers { display: grid; gap: 16px; margin-top: 28px; }
+.tier { display: flex; flex-direction: column; padding: 24px 22px 22px; border-radius: 28px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 20px 36px -28px var(--shadow); min-width: 0; }
+.tier-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.tier h3 { font-size: 1.625rem; margin: 12px 0 0; }
+.tier > p { color: var(--ink-2); margin-top: 8px; }
+.tier-count { font-weight: 700; color: var(--ink-3); font-size: 0.9375rem; }
+.tier-core { background: linear-gradient(180deg, var(--accent-soft), var(--surface) 62%); border-color: transparent; }
+.tier-adv { background: linear-gradient(180deg, var(--pop-soft), var(--surface) 62%); border-color: transparent; }
+.modlist { list-style: none; padding: 0 !important; margin: 16px 0 0; }
+.modlist li { margin: 0 !important; border-top: 1px solid var(--line); }
+.modlist li:first-child { border-top: 0; }
+.modlist a, .modlist .locked { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr) auto; gap: 0 10px; align-items: center; min-height: 52px; padding: 8px 0; color: var(--ink); text-decoration: none; font-weight: 700; line-height: 1.25; }
+.modlist a:hover .t { text-decoration: underline; text-underline-offset: 0.18em; }
+.modlist .n { width: 2.1rem; height: 2.1rem; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent-strong); font-family: var(--font-head); font-weight: 700; font-size: 0.875rem; line-height: 1; }
+.tier-adv .modlist .n { background: var(--violet-soft); color: var(--violet); }
+.modlist .go { color: var(--ink-3); display: inline-flex; }
+.modlist .go svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.tier details { margin-top: 14px; }
+.tier summary { cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--line-strong); font-weight: 800; color: var(--ink); list-style: none; }
+.tier summary::-webkit-details-marker { display: none; }
+.tier summary::after { content: '+'; font-weight: 800; font-size: 1.2em; line-height: 1; color: var(--accent); }
+.tier details[open] summary::after { content: '\2212'; }
+.tier .actions { margin-top: auto; padding-top: 22px; }
+.tier .btn { min-height: 48px; padding: 10px 22px; font-size: 1.0625rem; }
+
+/* supporter offer */
+.offer { margin-top: 20px; display: grid; gap: 22px; padding: 28px 22px; border-radius: 32px; background: linear-gradient(150deg, var(--bar-bg), color-mix(in srgb, var(--bar-bg) 64%, var(--accent))); color: var(--bar-ink); box-shadow: 0 30px 50px -34px var(--shadow); }
+.offer h3 { font-size: clamp(1.75rem, 4.6vw, 2.375rem); margin: 10px 0 0; color: var(--bar-ink); }
+.offer p { color: var(--bar-ink-2); }
+.offer .ticks { list-style: none; padding: 0 !important; margin: 16px 0 0; display: grid; gap: 10px; }
+.offer .ticks li { margin: 0 !important; display: grid; grid-template-columns: 1.7rem minmax(0, 1fr); gap: 10px; align-items: start; color: var(--bar-ink); font-weight: 600; }
+.offer .ticks svg { width: 1.6rem; height: 1.6rem; padding: 4px; border-radius: 50%; background: var(--accent-on-bar); color: var(--bar-bg); fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.offer-buy { align-self: center; padding: 22px 20px; border-radius: 24px; background: var(--surface); color: var(--ink); text-align: center; }
+.offer-buy .price { font-family: var(--font-head); font-weight: 800; font-size: clamp(2.75rem, 9vw, 3.75rem); line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
+.offer-buy .once { color: var(--ink-2); font-weight: 600; margin-top: 6px; }
+.offer-buy .btn { width: 100%; margin-top: 16px; }
+.offer-buy .heart { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; color: var(--violet); font-weight: 700; font-size: 0.9375rem; line-height: 1.35; }
+.offer-buy .heart svg { width: 22px; height: 22px; flex: none; fill: currentColor; stroke: none; }
+.offer p { margin-top: 10px; }
+.offer-buy .have { margin-top: 10px; font-size: 0.9375rem; color: var(--ink-2); }
+
+/* symptom checker feature */
+.feature { display: grid; gap: 24px; align-items: center; padding: 28px 22px; border-radius: 32px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 20px 36px -28px var(--shadow); }
+.feature h2 { font-size: clamp(1.875rem, 5vw, 2.625rem); }
+.feature p { color: var(--ink-2); margin-top: 12px; max-width: 34rem; }
+.mock { padding: 18px; border-radius: 24px; background: var(--surface-2); }
+.mock-title { font-weight: 800; font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+.mock ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.mock li { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--line); font-weight: 600; font-size: 0.9375rem; line-height: 1.25; }
+.mock li.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.mock li svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.mock .flagline { margin-top: 14px; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 16px; background: var(--emergency-soft); color: var(--emergency); font-weight: 700; font-size: 0.9375rem; line-height: 1.3; }
+.mock .flagline svg { width: 1.3em; height: 1.3em; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* story */
+.story { display: grid; gap: 28px; align-items: center; }
+.story:not(.has-photos) .story-text { max-width: 46rem; }
+.story-text > * + * { margin-top: 1em; }
+.story-text h2 + p { font-family: var(--font-head); font-size: clamp(1.4375rem, 3.6vw, 1.875rem); line-height: 1.25; letter-spacing: -0.015em; color: var(--ink); }
+.story-text p { color: var(--ink-2); font-size: 1.125rem; }
+.follow { list-style: none; padding: 0 !important; margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.follow li { margin: 0 !important; }
+.follow a { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--line-strong); color: var(--ink); font-weight: 800; text-decoration: none; }
+.follow a:hover { background: var(--accent-soft); border-color: var(--accent); }
+.follow svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.facts { display: grid; grid-template-columns: minmax(6rem, auto) minmax(0, 1fr); gap: 0 18px; margin-top: 1.4em; }
+.facts dt, .facts dd { padding: 10px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.facts dt { color: var(--ink-2); }
+.facts dd { font-weight: 700; }
+.photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.photos figure { margin: 0; }
+.photos img { display: block; width: 100%; height: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 22px 22px; box-shadow: 0 20px 36px -26px var(--shadow); }
+.photos figure:nth-child(even) { margin-top: 28px; }
+
+/* support */
+.support-card { display: grid; gap: 22px; padding: 32px 22px; border-radius: 32px; background: radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--accent) 86%, var(--pop)), var(--bar-bg) 70%); color: var(--bar-ink); box-shadow: 0 30px 50px -34px var(--shadow); }
+.support-card h2 { color: var(--bar-ink); }
+.support-card p { color: var(--bar-ink-2); font-size: 1.125rem; }
+.support-card .band-body { margin-top: 14px; }
+.support-card h3 { color: var(--bar-ink); font-size: 1.1875rem; font-family: var(--font-body); font-weight: 800; letter-spacing: 0; }
+.uses { list-style: none; padding: 0 !important; display: flex; flex-wrap: wrap; gap: 8px; }
+.uses li { margin: 0 !important; padding: 8px 16px; border-radius: 999px; background: color-mix(in srgb, var(--bar-ink) 12%, transparent); color: var(--bar-ink); font-weight: 700; }
+.support-card .btn-plain { color: var(--bar-ink); border-color: color-mix(in srgb, var(--bar-ink) 55%, transparent); }
+.support-card .btn-plain:hover { background: color-mix(in srgb, var(--bar-ink) 12%, transparent); border-color: var(--bar-ink); }
+.support-card .note { background: transparent; padding: 0; color: var(--bar-ink-2); font-size: 0.9375rem; }
+.support-card a:not(.btn) { color: var(--accent-on-bar); }
+
+/* install */
+.two { display: grid; gap: 14px; margin-top: 22px; }
+.two > div { padding: 22px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line); }
+.two h3 { margin-top: 0; }
+.two ol { margin-top: 0.8em; }
+
+/* ---------- the help page ---------- */
+.vet-now { background: var(--emergency-soft); border: 1.5px solid var(--emergency-line); border-radius: 28px; padding: 24px 22px; }
+.vet-now h2 { font-size: clamp(1.5rem, 4.4vw, 2rem); color: var(--emergency); }
+.vet-now ul { margin-top: 14px; padding-left: 1.3em; }
+.vet-now li + li { margin-top: 0.4em; }
+.vet-now li::marker { color: var(--emergency); }
+.vet-now p { margin-top: 14px; }
+.onpage { margin-top: 20px; padding: 20px 22px; border-radius: 28px; background: var(--surface); border: 1px solid var(--line); }
+.onpage h2 { font-family: var(--font-body); font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.onpage ol { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.onpage a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--surface-2); color: var(--ink); font-weight: 700; text-decoration: none; }
+.onpage a:hover { background: var(--accent-soft); }
+.help .band { padding-top: 20px; padding-bottom: 0; }
+.help .band-in { padding: 28px 22px; border-radius: 28px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 20px 36px -30px var(--shadow); }
+.help .band h2 { font-size: clamp(1.75rem, 4.6vw, 2.375rem); }
+.stop { background: var(--emergency-soft); border: 1.5px solid var(--emergency-line); border-radius: 18px; padding: 14px 18px; }
+.stop strong { color: var(--emergency); }
+.signs-list { list-style: none; padding: 0 !important; display: flex; flex-wrap: wrap; gap: 8px; }
+.signs-list li { margin: 0 !important; padding: 8px 14px; border-radius: 999px; background: var(--surface-2); font-weight: 600; }
+.hour { list-style: none; padding: 0 !important; counter-reset: hour; display: grid; gap: 12px; }
+.hour > li { counter-increment: hour; margin: 0 !important; display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 0 14px; padding: 18px; border-radius: 22px; background: var(--surface-2); }
+.hour > li::before { content: counter(hour); width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font-family: var(--font-head); font-weight: 800; font-size: 1.5rem; line-height: 1; }
+.hour h3 { margin-top: 0.35em; }
+.hour div > * + * { margin-top: 0.7em; }
+.donts { list-style: none; padding: 0 !important; display: grid; gap: 10px; }
+.donts li { margin: 0 !important; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 12px; align-items: start; padding: 12px 14px; border-radius: 16px; background: var(--emergency-soft); }
+.donts svg { width: 2rem; height: 2rem; padding: 6px; border-radius: 50%; background: var(--emergency); color: #fff; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; }
+.phones { list-style: none; padding: 0 !important; display: grid; gap: 12px; }
+.phones li { margin: 0 !important; padding: 16px 18px; border-radius: 20px; background: var(--surface-2); }
+.phones .who { font-weight: 800; font-size: 1.125rem; line-height: 1.25; }
+.phones .nums { margin-top: 4px; font-family: var(--font-head); font-weight: 700; font-size: 1.5rem; line-height: 1.3; }
+.phones .nums span { font-family: var(--font-body); font-weight: 600; font-size: 0.9375rem; color: var(--ink-2); margin-right: 10px; }
+.phones .why { margin-top: 6px; color: var(--ink-2); font-size: 1rem; }
+.tel { display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; font-weight: 800; font-variant-numeric: tabular-nums; }
+.more { list-style: none; padding: 0 !important; display: grid; gap: 8px; }
+.more li { margin: 0 !important; }
+.more a { display: flex; align-items: center; min-height: 52px; padding: 10px 18px; border-radius: 16px; background: var(--surface-2); color: var(--ink); font-weight: 700; text-decoration: none; }
+.more a:hover { background: var(--accent-soft); }
+
+.lost { padding-top: 72px; padding-bottom: 72px; }
+.lost h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+
+/* ---------- footer ---------- */
+.foot { margin-top: 64px; background: var(--bar-bg); color: var(--bar-ink-2); border-radius: 36px 36px 0 0; font-size: 1rem; }
+.foot-in { display: grid; gap: 28px; padding-top: 40px; padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
+.foot strong { display: block; color: var(--bar-ink); font-family: var(--font-head); font-size: 1.25rem; margin-bottom: 8px; }
+.foot p + p { margin-top: 6px; }
+.foot ul { list-style: none; padding: 0; }
+.foot li + li { margin-top: 2px; }
+.foot a { color: var(--accent-on-bar); display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ---------- wider screens ---------- */
+@media (min-width: 720px) {
+  .top { position: sticky; top: 0; }
+  .story.has-photos { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+  .arch-stage { width: min(100%, 26rem); }
+  .opening { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); padding-top: 64px; padding-bottom: 40px; }
+  .urgent { padding: 44px 40px 40px; }
+  .order { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .order li { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 20px; }
+  .order li::before { grid-row: auto; }
+  .band { padding-top: 72px; }
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .offer { grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr); padding: 44px 40px; }
+  .feature { grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); padding: 44px 40px; }
+  .support-card { padding: 52px 44px; }
+  .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-in { grid-template-columns: 1.6fr 1fr 1fr; }
+  .help .band-in { padding: 36px 36px; }
+  .vet-now, .onpage { padding: 28px 32px; }
+}
+@media (min-width: 980px) {
+  .tiers { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+/* on the plum support card the main button is caption pink */
+.support-card a.btn:not(.btn-plain) { background: var(--pop); border-color: var(--pop); color: var(--pop-ink); box-shadow: none; }
+.support-card a.btn:not(.btn-plain):hover { background: var(--pop-strong); border-color: var(--pop-strong); }
+
+.tiers + .band-body, .offer + .band-body { margin-top: 28px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to the content</a>
+<header class="top">
+<div class="wrap top-in">
+<a class="brand" href="./"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="mark-body" d="M45 12c-6 0-10.500 4.200-11 9.800-.300 3.300-1.600 5.500-4.600 7.600C22 34.600 15.500 38 9 47.500c-.900 1.300.300 2.800 1.800 2.300l8.700-2.900c3.600 3.900 8.800 6.100 14.500 6.100 10.500 0 18-7.400 18-17 0-4.200-.800-7.800-.600-11.400L58 21.500c1-.500.900-1.900-.100-2.300l-5.200-1.900C51.300 14 48.400 12 45 12z"/><path class="mark-neck" d="M34.300 23.500c4.500 3.200 10.700 4.300 17.100 3.100-.100 1.900.100 3.900.300 6-7.500 1.300-14.600-.300-19.900-4.300 1.300-1.300 2.100-2.800 2.500-4.800z"/><path class="mark-bar" d="M24.500 44.500 37 36l1.800 2.600-12.500 8.500zM30.500 48.500 43 40l1.800 2.600-12.500 8.500z"/><circle class="mark-bar" cx="46.500" cy="18.500" r="1.900"/><path class="mark-crown" d="M39.200 10.400 37.600 3.600l4.100 2.900L45 1.800l3.300 4.700 4.100-2.900-1.600 6.800z"/></svg><span>Pigeon Palace</span></a>
+<nav class="nav" aria-label="Main">
+<ul>
+<li><a href="found-a-pigeon/">Found a pigeon?</a></li>
+<li><a href="#care-course">Care course</a></li>
+<li><a href="#our-story">Our story</a></li>
+<li class="nav-donate"><a href="#support">Donate</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="content">
+<section class="opening wrap" aria-labelledby="site-title">
+<div>
+<p class="tagline">A Mötley crew of pigeons</p>
+<h1 id="site-title">Pigeon <em>Palace</em></h1>
+<p class="lede">A pigeon care course with free starter modules, a free symptom checker, and first aid help for anyone who has just found a pigeon. Written for the UK.</p>
+<p class="actions"><a class="btn" href="app/">Start the free course <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><a class="btn btn-pop" href="found-a-pigeon/">Found a pigeon?</a></p>
+<ul class="trust">
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Free to start</li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Works offline</li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Written for the UK</li>
+</ul>
+</div>
+<div class="arch-stage">
+<div class="arch">
+<svg class="dots" viewBox="0 0 100 125" aria-hidden="true" focusable="false"><g fill="#fff"><circle cx="18" cy="52" r="1.200"/><circle cx="80" cy="44" r="1.500"/><circle cx="30" cy="30" r="1"/><circle cx="68" cy="22" r="1.200"/><circle cx="50" cy="12" r="1.500"/><circle cx="88" cy="74" r="1"/><circle cx="12" cy="82" r="1.300"/></g></svg>
+<svg class="bird" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="mark-body" d="M45 12c-6 0-10.500 4.200-11 9.800-.300 3.300-1.600 5.500-4.600 7.600C22 34.600 15.500 38 9 47.500c-.900 1.300.300 2.800 1.800 2.300l8.700-2.900c3.600 3.900 8.800 6.100 14.500 6.100 10.500 0 18-7.400 18-17 0-4.200-.800-7.800-.600-11.400L58 21.500c1-.500.900-1.900-.100-2.300l-5.200-1.900C51.300 14 48.400 12 45 12z"/><path class="mark-neck" d="M34.300 23.500c4.500 3.200 10.700 4.300 17.100 3.100-.100 1.900.100 3.900.300 6-7.500 1.300-14.600-.300-19.900-4.300 1.300-1.300 2.100-2.800 2.500-4.800z"/><path class="mark-bar" d="M24.500 44.500 37 36l1.800 2.600-12.500 8.500zM30.500 48.500 43 40l1.800 2.600-12.500 8.500z"/><circle class="mark-bar" cx="46.500" cy="18.500" r="1.900"/><path class="mark-crown" d="M39.200 10.400 37.600 3.600l4.100 2.900L45 1.800l3.300 4.700 4.100-2.900-1.600 6.800z"/></svg>
+</div>
+<p class="chip chip-a"><b>76</b> conditions checked</p>
+<p class="chip chip-b"><b>35</b> modules</p>
+</div>
+</section>
+
+<div class="wrap urgent-wrap">
+<section class="urgent" aria-labelledby="found-title">
+<h2 id="found-title">Found a pigeon?</h2>
+<p class="sub">Do these three things, in this order. The first aid page has the detail and the phone numbers.</p>
+<ol class="order">
+<li><strong>Warmth</strong><span>A closed box in a quiet room, with a wrapped hot water bottle at one end.</span></li>
+<li><strong>Then fluids</strong><span>Once the bird is warm and can stand, dip the tip of its beak in water with a pinch each of salt and sugar. Never squirt liquid in.</span></li>
+<li><strong>Then food</strong><span>Last, and only once the bird has passed droppings.</span></li>
+</ol>
+<p class="also">If a cat or dog has had the bird, it needs a vet the same day, even with no wound you can see.</p>
+<p class="actions"><a class="btn btn-light" href="found-a-pigeon/">Open the first aid page <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+</section>
+</div>
+
+<section class="band wrap" aria-labelledby="care-course">
+<div class="band-head">
+<p class="eyebrow">Free to start. Works offline. Written for the UK.</p>
+<h2 id="care-course">The care course</h2>
+<p class="sub-lede">The course is an app that runs in your browser. It takes a keeper from a first pigeon to running a small rescue, one module at a time, and it cites its sources as it goes.</p>
+</div>
+<dl class="stats">
+<div><dt>modules in the course</dt><dd>35</dd></div>
+<div><dt>advanced modules</dt><dd>15</dd></div>
+<div><dt>conditions in the symptom checker</dt><dd>76</dd></div>
+<div><dt>words in the full course</dt><dd>70,168</dd></div>
+</dl>
+<div class="tiers">
+<article class="tier">
+<div class="tier-head"><span class="pill pill-free">Free</span><span class="tier-count">7 modules</span></div>
+<h3>Start here</h3>
+<p>The basics every keeper needs: the bird itself, housing, food and water, hygiene and the daily droppings check.</p>
+<ul class="modlist">
+<li><a href="app/#intro"><span class="n" aria-hidden="true">00</span><span class="t">How to use this course</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m01"><span class="n" aria-hidden="true">01</span><span class="t">Know your pigeon</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m02"><span class="n" aria-hidden="true">02</span><span class="t">Housing and daily husbandry</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m03"><span class="n" aria-hidden="true">03</span><span class="t">Nutrition and water</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m04"><span class="n" aria-hidden="true">04</span><span class="t">Hygiene, biosecurity and quarantine</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m05"><span class="n" aria-hidden="true">05</span><span class="t">Reading droppings</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app/#m13"><span class="n" aria-hidden="true">13</span><span class="t">Rescue and first aid for a found pigeon</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+</ul>
+<p class="actions"><a class="btn" href="app/">Start the free course <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+</article>
+<article class="tier tier-core">
+<div class="tier-head"><span class="pill pill-pop"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg>Supporter</span><span class="tier-count">11 modules</span></div>
+<h3>The full core course</h3>
+<p>Illness, parasites, medicines, working with a vet, hand rearing, injuries, release and the law, with reference tables and checklists.</p>
+<ul class="modlist">
+<li><a href="app/#m06"><span class="n" aria-hidden="true">06</span><span class="t">The sick pigeon</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m07"><span class="n" aria-hidden="true">07</span><span class="t">Parasites and protozoa</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m08"><span class="n" aria-hidden="true">08</span><span class="t">Bacterial and fungal disease</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m09"><span class="n" aria-hidden="true">09</span><span class="t">Viral disease and notifiable disease law</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+</ul>
+<details>
+<summary>7 more modules</summary>
+<ul class="modlist">
+<li><a href="app/#m10"><span class="n" aria-hidden="true">10</span><span class="t">Zoonoses and keeper health</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m11"><span class="n" aria-hidden="true">11</span><span class="t">Medicines and keeper treatment</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m12"><span class="n" aria-hidden="true">12</span><span class="t">Working with a vet</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m14"><span class="n" aria-hidden="true">14</span><span class="t">Hand rearing squabs</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m15"><span class="n" aria-hidden="true">15</span><span class="t">Injuries</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m16"><span class="n" aria-hidden="true">16</span><span class="t">Rehabilitation and release</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#m17"><span class="n" aria-hidden="true">17</span><span class="t">Law, ethics and euthanasia</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+</ul>
+</details>
+</article>
+<article class="tier tier-adv">
+<div class="tier-head"><span class="pill pill-pop"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg>Supporter</span><span class="tier-count">15 modules</span></div>
+<h3>Advanced</h3>
+<p>For experienced rehabilitators: critical care, crop disorders, microscopy, orthopaedics, toxicology and running a rescue.</p>
+<ul class="modlist">
+<li><a href="app/#a01"><span class="n" aria-hidden="true">A1</span><span class="t">Advanced assessment</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a02"><span class="n" aria-hidden="true">A2</span><span class="t">Fluid therapy and critical care nutrition</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a03"><span class="n" aria-hidden="true">A3</span><span class="t">Crop disorders</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a04"><span class="n" aria-hidden="true">A4</span><span class="t">Neurological cases and paramyxovirus nursing</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+</ul>
+<details>
+<summary>11 more modules</summary>
+<ul class="modlist">
+<li><a href="app/#a05"><span class="n" aria-hidden="true">A5</span><span class="t">Toxicology and contamination</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a06"><span class="n" aria-hidden="true">A6</span><span class="t">Advanced microscopy and cytology</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a07"><span class="n" aria-hidden="true">A7</span><span class="t">Clinical pathology and imaging</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a08"><span class="n" aria-hidden="true">A8</span><span class="t">Orthopaedics and physiotherapy</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a09"><span class="n" aria-hidden="true">A9</span><span class="t">Advanced wound care, feet and feathers</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a10"><span class="n" aria-hidden="true">A10</span><span class="t">Post mortem examination for rehabilitators</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a11"><span class="n" aria-hidden="true">A11</span><span class="t">Reproductive and metabolic disorders</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a12"><span class="n" aria-hidden="true">A12</span><span class="t">Running a rescue</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a13"><span class="n" aria-hidden="true">A13</span><span class="t">Species protocols</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a14"><span class="n" aria-hidden="true">A14</span><span class="t">Advanced release and long term care</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+<li><a href="app/#a15"><span class="n" aria-hidden="true">A15</span><span class="t">Reading the evidence</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 11h12v9H6z"/><path d="M8.500 11V8a3.500 3.500 0 0 1 7 0v3"/></svg></span></a></li>
+</ul>
+</details>
+</article>
+</div>
+<div class="offer" id="full-course">
+<div>
+<span class="pill pill-sun">Supporter course</span>
+<h3>Unlock the full course</h3>
+<p>The free modules stay free. The rest of the course is here when you want to go further.</p>
+<ul class="ticks">
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg><span>27 more modules, on top of the free ones</span></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg><span>15 advanced modules for experienced rehabilitators</span></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg><span>Reference tables and checklists</span></li>
+<li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg><span>Works offline once it is unlocked</span></li>
+</ul>
+</div>
+<div class="offer-buy">
+<p class="price">£15</p>
+<p class="once">One payment. No subscription.</p>
+<p class="once">On sale soon.</p>
+<p class="heart"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.500c-5.500-3.600-8.500-6.800-8.500-10.400C3.500 7.300 5.600 5.500 8 5.500c1.600 0 3 .800 4 2.200 1-1.400 2.400-2.200 4-2.200 2.400 0 4.500 1.800 4.500 4.600 0 3.600-3 6.800-8.500 10.400z"/></svg><span>Every penny goes to rehab.</span></p>
+<p class="have">Already have a code? <a href="app/">Enter it in the app</a>.</p>
+</div>
+</div>
+<div class="band-body">
+<p class="note">The starter modules and the symptom checker are free. It works offline once you have opened it, and it is written for the United Kingdom. It is decision support and teaching material. It is not a diagnosis and it does not replace a vet.</p>
+</div>
+</section>
+
+<section class="band wrap" aria-labelledby="symptom-checker">
+<div class="feature">
+<div>
+<p class="eyebrow">Free symptom checker</p>
+<h2 id="symptom-checker">Not sure what is wrong?</h2>
+<p>Tick the signs you can see. The checker ranks 76 conditions against them, and puts the red flags that mean a vet now at the top.</p>
+<p class="actions"><a class="btn" href="app/#symptoms">Open the symptom checker <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+</div>
+<div class="mock" aria-hidden="true">
+<p class="mock-title">Tick what you can see</p>
+<ul>
+<li>Fluffed up, quiet, eyes closing</li>
+<li class="on"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Drinking far more than usual</li>
+<li>Cold to the touch</li>
+<li class="on"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg>Pale mouth lining and pale skin</li>
+<li>Swollen or tight abdomen</li>
+<li>Green faeces</li>
+</ul>
+<p class="flagline"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 21V4"/><path d="M6 5h11l-2 3.500 2 3.500H6"/></svg><span>Red flags that mean a vet now are shown first</span></p>
+</div>
+</div>
+</section>
+
+<section class="band wrap" aria-labelledby="our-story">
+<div class="story">
+<div class="story-text">
+<p class="eyebrow">The rescue behind the course</p>
+<h2 id="our-story">Our story</h2>
+<p>The Pigeon Palace is a mixture of garden fantails that we inherited and rescue pigeons.</p>
+<p>I'm a small time home rehabber. I take in pigeons and doves who have had a hard start in life, are unwell or injured. Everything I do is self funded.</p>
+<p>Follow my journey of learning to rehab pigeons and the wonderful little personalities they have.</p>
+<ul class="follow">
+<li><a href="https://www.instagram.com/the.pigeon.palace/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.600"/><path d="M16.800 7.200h.100"/></svg>Instagram</a></li>
+<li><a href="https://www.youtube.com/@thepigeonpalace" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="12" rx="3.500"/><path d="M10.500 9.500v5l4-2.500z"/></svg>YouTube</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="band wrap support" aria-labelledby="support">
+<div class="support-card">
+<div>
+<h2 id="support">Support the Pigeon Palace</h2>
+<div class="band-body">
+<p>Everything at the Pigeon Palace is self funded. Donations help towards rehab care and vet bills.</p>
+<h3>What donations pay for</h3>
+<ul class="uses">
+<li>Rehab care</li>
+<li>Vet bills</li>
+</ul>
+</div>
+</div>
+<div>
+<p class="actions"><a class="btn" href="https://gofund.me/9d72164a3" target="_blank" rel="noopener">Donate on GoFundMe <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v5H5V7h5"/></svg></a><a class="btn btn-plain" href="https://www.amazon.co.uk/hz/wishlist/ls/SET4HIFOU5BB" target="_blank" rel="noopener">Amazon wish list <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M17 14v5H5V7h5"/></svg></a></p>
+<p class="note">The button takes you to GoFundMe, where the donation is made. Nothing is paid on this site.</p>
+</div>
+</div>
+</section>
+
+<section class="band wrap" aria-labelledby="use-as-app">
+<div class="band-head">
+<p class="eyebrow">On your phone</p>
+<h2 id="use-as-app">Use it as an app</h2>
+<p class="sub-lede">Add the course to your phone's home screen and it opens like any other app, with or without a signal.</p>
+</div>
+<div class="two">
+<div>
+<h3>iPhone</h3>
+<ol>
+<li>Open <a href="app/">the app page</a> in Safari.</li>
+<li>Tap Share.</li>
+<li>Tap 'Add to Home Screen'.</li>
+</ol>
+</div>
+<div>
+<h3>Android</h3>
+<ol>
+<li>Open <a href="app/">the app page</a> in Chrome.</li>
+<li>Tap the menu.</li>
+<li>Tap 'Install app' or 'Add to Home screen'.</li>
+</ol>
+</div>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div>
+<strong>Pigeon Palace</strong>
+<p>Written for the United Kingdom. Medicines, law and phone numbers are UK specific.</p>
+<p>Decision support and teaching material. It is not a diagnosis and it does not replace a vet.</p>
+<p>Content as of 12 November 2026.</p>
+</div>
+<nav aria-label="Footer">
+<strong>Pages</strong>
+<ul>
+<li><a href="./">Home</a></li>
+<li><a href="found-a-pigeon/">Found a pigeon?</a></li>
+<li><a href="app/">Open the app</a></li>
+</ul>
+</nav>
+<div>
+<strong>Follow and contact</strong>
+<ul class="contact">
+<li><a href="https://www.instagram.com/the.pigeon.palace/" target="_blank" rel="noopener">Instagram</a></li>
+<li><a href="https://www.youtube.com/@thepigeonpalace" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
