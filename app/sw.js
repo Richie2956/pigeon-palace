@@ -1,6 +1,6 @@
 // Pigeon Palace service worker. Cache first, so the whole app works offline after the first load.
 // The build stamps the cache name and the asset list.
-const CACHE = 'pigeon-care-607666d5a3';
+const CACHE = 'pigeon-care-2f57f79e8a';
 const FONT_CACHE = 'pigeon-care-fonts-v1';
 const ASSETS = ["./","./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png"];
 const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
